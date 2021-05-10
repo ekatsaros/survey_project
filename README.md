@@ -199,11 +199,25 @@ Get Questions
 
 ![GetQuestions](https://user-images.githubusercontent.com/14307335/117659124-3bbe1d00-b1a4-11eb-9737-2e7daa83e379.JPG)
 
-Django Admin Page we see also that the survey was created
+Posting an answer
+
+![postinganswer](https://user-images.githubusercontent.com/14307335/117664169-2815b500-b1aa-11eb-9566-4eb01116f1a9.JPG)
+
+## Django Admin Page we see also that the survey was created with the questions we posted as well as the answer we gave
 
 ![ridingsurveyadmin](https://user-images.githubusercontent.com/14307335/117659169-48db0c00-b1a4-11eb-80e8-d9e784f7ad9a.JPG)
 
 ![ridingadminquestions_with_other](https://user-images.githubusercontent.com/14307335/117659260-66a87100-b1a4-11eb-84c2-b8ba76e11f87.JPG)
 
-Every question as can be seen also has an other option to use or not.
+![answer admin](https://user-images.githubusercontent.com/14307335/117664901-f51ff100-b1aa-11eb-9d4a-96e25be17d59.JPG)
+
+![usersansweradmin](https://user-images.githubusercontent.com/14307335/117665090-27c9e980-b1ab-11eb-954a-e2d24d6f1790.JPG)
+
+Note* Every question as can be seen also has an other option to use or not.
+
+## Browsable API.
+
+Since the development was done with Djano REST API Browsable api is available through the browser:
+
+![Browsable API](https://user-images.githubusercontent.com/14307335/117665651-b9395b80-b1ab-11eb-9908-c038cb5a1f50.JPG)
 
