@@ -1,7 +1,7 @@
 # Survey API
 API to create and manage Surveys written in Django Rest Framework
 
-## Descritpion and Design
+## Description and Design
 
 This api can be used to create and manage Surveys. Surveys can be assigned to specific users as well as groups or both. 
 Surveys have publication and expiration date to control the display duration allong with an interval to define the frequency of the survey display.
@@ -185,9 +185,10 @@ API is used to create also and manage Surveys. As of now no Authorization is imp
 ```
 
 # Example
+
 This example describes a survey for users to share the riding experience on a ride-hailing app like Uber.
 
-The following screeshot depicts survey creation using postman
+The following screenshot depicts survey creation using postman
 
 ![CreateSurvey](https://user-images.githubusercontent.com/14307335/117658221-298faf00-b1a3-11eb-9061-ba42ba40efd8.JPG)
 
