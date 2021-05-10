@@ -7,8 +7,8 @@ from django.contrib.auth.models import User, Group
 from django.http import Http404
 from django.core.exceptions import ValidationError
 
-from .models import Survey, Category, Question
-from survey.serializers import SurveySerializer, CategorySerializer, PostSurveySerializer, PostAddQuestionSerializer, QuestionSerializer, PostQuestionSerializer
+from .models import Survey, Category, Question, Answer
+from survey.serializers import SurveySerializer, CategorySerializer, PostSurveySerializer, PostAddQuestionSerializer, QuestionSerializer, AnswerSerializer
 
 # Create your views here.
 
@@ -147,6 +147,25 @@ class QuestionDetail(APIView):
         question = self.get_object(pk=pk)
         question.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def post(self, request, pk, format=None):
+
+        serializer = AnswerSerializer(data=request.data)
+        if serializer.is_valid():
+            question =  self.get_object(pk)
+            try:
+                user = User.objects.get(email=request.data.get('user_email'))
+            except User.DoesNotExist:
+                raise Http404
+
+            Answer.objects.create(
+                text=self.request.data.get('answer'),
+                question=question,
+                user=user
+            )
+
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 

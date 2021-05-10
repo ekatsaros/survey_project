@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User, Group
-from survey.models import Survey, SurveyToUser, SurveyToGroup, Category, Question
+from survey.models import Survey, SurveyToUser, SurveyToGroup, Category, Question, Answer
 
 
 class QuestionSerializer(serializers.ModelSerializer):
@@ -105,3 +105,8 @@ class PostAddQuestionSerializer(serializers.Serializer):
     Accepting list of question objects
     """
     questions = PostQuestionSerializer(many=True, required=True, help_text='list of new question objects to be added to a survey')
+
+
+class AnswerSerializer(serializers.Serializer):
+    answer = serializers.CharField(required=True, help_text="Users anwser to the question")
+    user_email = serializers.EmailField(required=True, help_text='Email of the user that answered the Question')

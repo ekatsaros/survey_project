@@ -74,7 +74,7 @@ class Answer(models.Model):
 
     def __str__(self):
         return f'Answer: {self.text} to the Question {self.question.text} ' \
-               f'given by user: {self.user.name} for survey {self.question.survey.name}'
+               f'given by User: {self.user.username} for survey {self.question.survey.name}'
 
 
 class SurveyToUser(models.Model):

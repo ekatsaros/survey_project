@@ -38,4 +38,5 @@ admin.site.unregister(User)
 admin.site.register(User, UserAdmin)
 #admin.site.register(Group, GroupAdmin)
 admin.site.register(Survey, SurveyAdmin)
+admin.site.register(Answer)
 
