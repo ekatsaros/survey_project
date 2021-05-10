@@ -184,3 +184,26 @@ API is used to create also and manage Surveys. As of now no Authorization is imp
  URL: http://localhost:8000/surveys/categories/
 ```
 
+# Example
+This example describes a survey for users to share the riding experience on a ride-hailing app like Uber.
+
+The following screeshot depicts survey creation using postman
+
+![CreateSurvey](https://user-images.githubusercontent.com/14307335/117658221-298faf00-b1a3-11eb-9061-ba42ba40efd8.JPG)
+
+Get Survey
+
+![GetSurvey](https://user-images.githubusercontent.com/14307335/117659076-29dc7a00-b1a4-11eb-855d-46537136ce09.JPG)
+
+Get Questions
+
+![GetQuestions](https://user-images.githubusercontent.com/14307335/117659124-3bbe1d00-b1a4-11eb-9737-2e7daa83e379.JPG)
+
+Django Admin Page we see also that the survey was created
+
+![ridingsurveyadmin](https://user-images.githubusercontent.com/14307335/117659169-48db0c00-b1a4-11eb-80e8-d9e784f7ad9a.JPG)
+
+![ridingadminquestions_with_other](https://user-images.githubusercontent.com/14307335/117659260-66a87100-b1a4-11eb-84c2-b8ba76e11f87.JPG)
+
+Every question as can be seen also has an other option to use or not.
+
