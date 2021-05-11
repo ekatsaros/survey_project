@@ -27,16 +27,12 @@ The image bellow depicts the Entity Relation Diagram created in DBVizualizer.
 ```bash
 $ docker-compose up
 ```
-Go to https://localhost:8000 to see the results.
 
 ```bash
 $ docker-compose up -d  (to run in the background)
 ```
 Use http://localhost:8000 as base url.
 
-```bash
-$ docker-compose up -d  (to run in the background)
-```
 
 ## Working with the environment
 
